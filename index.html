@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Instagram</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="header-logo">
+                <i class="fa-brands fa-instagram"></i>
+                <p>/</p>
+                <a href="https://www.instagram.com"><img src="images/logo.png"></a>
+            </div>
+            <div class="search">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquisar" name="busca"/>
+                </div>
+            </div>
+            <div class="notifications-icons">
+                <a href="#"><i class="fa-regular fa-compass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <div style="background-image: url('images/perfil.jpg');" class="img-min"></div>
+            </div>
+        </div>
+    </header>
+    <section class="perfil-info">
+        <div class="center">
+            <div class="img-perfil-wraper">
+                <div class="img-perfil" style="background-image: url('images/perfil.jpg');">
+
+                </div>
+            </div>
+            <div class="texto-perfil">
+                <div class="nome-perfil">
+                    <span>Nome Usuário</span>
+                    <a href="#" class="editar-perfil">Editar perfil</a>
+                    <a href="#" class="config"><i class="fa-solid fa-gear"></i></a>
+                </div>
+            </div>
+            <div class="infos-perfil">
+                <p><b>100</b> Publicações</p>
+                <p><b>100</b> seguidores</p>
+                <p><b>100</b> seguindo</p>
+            </div>
+            <div class="descricao-perfil">
+                <h3>Fulano de tal | Facebook-CEO</h3>
+                <p>&#127918; - Jogador número 1.</p>
+                <p>&#128214; - Apaixonado por leitura.</p>
+                <p>&#127891; - Harvard.</p>
+                <p> &#127936; - Go Lakers.</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <section class="feed">
+        <div class="center">
+            <div class="line-feed">
+                <div aba="publicacoes" class="single-line-name">
+                    <div class="line-marcacao"></div>
+                    <p><i class="fa-solid fa-table-cells"></i> Publicações</p>
+                </div>
+                <div aba="igtv" class="single-line-name">
+                    <div style="display: none;" class="line-marcacao"></div>
+                    <p><i class="fa-regular fa-circle-play"></i> Reels</p>                    
+                </div>
+                <div aba="salvos" class="single-line-name">
+                    <div style="display: none;" class="line-marcacao"></div>
+                    <p><i class="fa-regular fa-bookmark"></i> Salvos</p>
+                </div>
+                <div aba="marcacoes" class="single-line-name">
+                    <div style="display: none;" class="line-marcacao"></div>
+                    <p><i class="fa-regular fa-id-badge"></i> Marcados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="publicacoes">
+        <div class="center">
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+        </div>
+    </section>
+    <section id="igtv">
+        <div class="center">
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+        </div>
+    </section>
+    <section id="salvos">
+        <div class="center">
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/perfil.jpg');"></div>
+        </div>
+    </section>
+    <section id="marcacoes">
+        <div class="center">
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+            <div class="publicacoes-single" style="background-image: url('images/logo.png');"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        var elements = document.getElementsByClassName("single-line-name");
+
+        var alterarAbas = function(){
+            var aba = this.getAttribute("aba");
+            var element = document.getElementById(aba);
+
+            var lines = document.getElementsByClassName("single-line-name");
+
+            for (var i = 0; i < lines.length; i++){
+                lines[i].children[0].style.display = "none";
+            }
+            
+            document.getElementById("publicacoes").style.display = "none";
+            document.getElementById("igtv").style.display = "none";
+            document.getElementById("salvos").style.display = "none";
+            document.getElementById("marcacoes").style.display = "none";
+
+            element.style.display = "block";
+            this.children[0].style.display = "block";
+      
+        }
+
+        for (var i = 0; i < elements.length; i++){
+            elements[i].addEventListener("click", alterarAbas, false);
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/14f49105d9.js" crossorigin="anonymous"></script>
+</body>
+</html>
